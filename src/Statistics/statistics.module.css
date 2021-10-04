@@ -1,0 +1,51 @@
+.label {
+  color: white;
+}
+
+.statistics {
+  background-color: white;
+  width: 270px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat_list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.stat_list > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.stat_list > li::marker {
+  content: none;
+}
+
+.stat_list > li:nth-child(1) {
+  background-color: #57ccfa;
+}
+.stat_list > li:nth-child(2) {
+  background-color: #a43cf3;
+}
+.stat_list > li:nth-child(3) {
+  background-color: #e64c66;
+}
+.stat_list > li:nth-child(4) {
+  background-color: #20b8c5;
+}
+.stat_list > li:nth-child(5) {
+  background-color: brown;
+}
+.percentage {
+  color: white;
+}

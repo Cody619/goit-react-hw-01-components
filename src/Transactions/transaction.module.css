@@ -1,0 +1,23 @@
+.transaction_history {
+  width: 870px;
+  border-collapse: collapse;
+}
+
+.transaction_history > thead > tr > th {
+  background-color: #00bcd5;
+  color: white;
+  text-transform: uppercase;
+  height: 50px;
+  border-right: 1px solid white;
+}
+
+.transaction_history > tbody > tr > td {
+  height: 50px;
+  text-align: center;
+  border-right: 1px solid #e4e4e4;
+  background: white;
+}
+
+.transaction_history > tbody > tr:nth-child(2n) > td {
+  background-color: #ecf1f4;
+}

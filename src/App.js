@@ -1,9 +1,16 @@
 import './App.css'
-import { Profile } from './Profile'
+
+import { Profile } from './profile/Profile'
+import { Statistics } from './Statistics/Statistics'
 
 import user from './user.json'
+import stats from './stats.json'
 
-console.log(user)
+import friends from './friends.json'
+import { Friends } from './FriendList/FriendList'
+
+import { Transaction } from './Transactions/TransactionHistory.js'
+import transaction from './transaction.json'
 
 function App() {
   return (
@@ -15,6 +22,13 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <br />
+      <Statistics stats={stats} title="Upload stats" />
+      <br />
+      <Friends friends={friends} />
+      <br />
+
+      <Transaction items={transaction} />
     </div>
   )
 }
