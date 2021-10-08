@@ -1,5 +1,7 @@
 import React from 'react'
 import classes from './transaction.module.css'
+import PropTypes from 'prop-types'
+
 export const Transaction = (props) => {
   const { items } = props
 
@@ -26,4 +28,8 @@ export const Transaction = (props) => {
       </tbody>
     </table>
   )
+}
+
+Transaction.propTypes = {
+  items: PropTypes.array,
 }

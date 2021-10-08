@@ -3,14 +3,14 @@ import './App.css'
 import { Profile } from './profile/Profile'
 import { Statistics } from './Statistics/Statistics'
 
-import user from './user.json'
-import stats from './stats.json'
+import user from './data/user.json'
+import stats from './data/stats.json'
 
-import friends from './friends.json'
+import friends from './data/friends.json'
 import { Friends } from './FriendList/FriendList'
 
 import { Transaction } from './Transactions/TransactionHistory.js'
-import transaction from './transaction.json'
+import transaction from './data/transaction.json'
 
 function App() {
   return (

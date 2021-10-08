@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './profile.module.css'
+import PropTypes from 'prop-types'
 
 export const Profile = (props) => {
   const { name, tag, location, avatar, stats } = props
@@ -34,4 +35,11 @@ export const Profile = (props) => {
       </ul>
     </div>
   )
+}
+Profile.propTypes = {
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.array,
 }

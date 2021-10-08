@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 import classes from './statistics.module.css'
 
 export const Statistics = (props) => {
@@ -21,4 +21,8 @@ export const Statistics = (props) => {
       </ul>
     </section>
   )
+}
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
 }
